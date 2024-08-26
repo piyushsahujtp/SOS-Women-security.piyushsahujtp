@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Gesture Recognition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <button id="camera-toggle">Toggle Camera</button>
+    
+    <div id="description">
+        <h2>How to Use This Software</h2>
+        <p>This software monitors the webcam feed for SOS gestures. If detected, an alert will sound. Use the buttons to toggle the camera and dark mode. The matrix shows the severity level of the detected gesture.</p>
+    </div>
+
+    <div id="webcam-container">
+        <div id="webcam-frame">
+            <video id="webcam" autoplay></video>
+        </div>
+    </div>
+
+    <div class="alert-box" id="alert-box">
+        <p>SOS Gesture Detected!</p>
+        <button id="stop-alarm">Stop Alarm</button>
+    </div>
+
+    <div class="matrix-container">
+        <div class="matrix-level level-1"></div>
+        <div class="matrix-level level-2"></div>
+        <div class="matrix-level level-3"></div>
+        <div class="matrix-level level-4"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

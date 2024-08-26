@@ -1,0 +1,126 @@
+:root {
+    --bg-color-light: #f4f4f4;
+    --bg-color-dark: #2e2e2e;
+    --text-color-light: #000;
+    --text-color-dark: #fff;
+    --alert-bg-color: red;
+    --alert-text-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#camera-toggle {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+#webcam-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#webcam-frame {
+    border: 5px solid #555;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    background-color: var(--bg-color-light);
+}
+
+#webcam {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.alert-box {
+    display: none;
+    background-color: var(--alert-bg-color);
+    color: var(--alert-text-color);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.alert-box p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.alert-box button {
+    background-color: green;
+    color: #fff;
+}
+
+.alert-box button:hover {
+    background-color: darkgreen;
+}
+
+.matrix-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.matrix-level {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.level-1 {
+    background-color: green;
+}
+
+.level-2 {
+    background-color: yellow;
+}
+
+.level-3 {
+    background-color: orange;
+}
+
+.level-4 {
+    background-color: red;
+}
+
+#description {
+    margin-bottom: 20px;
+    text-align: center;
+}
